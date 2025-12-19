@@ -39,26 +39,27 @@ This architecture is intentionally minimal to emphasize clarity and learning fun
 ---
 
 ## Training
-- **Loss function:** CrossEntropyLoss
-- **Optimizer:** Adam
-- Training is performed over multiple epochs
-- Training loss decreases over time, confirming that the model learns meaningful patterns
+- **Loss function:** CrossEntropyLoss  
+- **Optimizer:** Adam  
+- Training is performed over multiple epochs  
+- Training loss decreases over time, confirming that the model learns meaningful patterns  
 
 ![Training Loss](assets/training_loss.png)
 
-**Figure:** Training loss decreasing over epochs, indicating that the model is learning meaningful patterns from the data.
+*Figure:* Training loss decreasing over epochs, indicating that the model is learning meaningful patterns from the data.
+
 ---
 
 ## Evaluation
-- The model is evaluated on unseen test data
-- Accuracy is computed by comparing predicted labels to ground truth labels
-- Final test accuracy: **~98%**
+- The model is evaluated on unseen test data  
+- Accuracy is computed by comparing predicted labels to ground truth labels  
+- Final test accuracy: **~98%**  
 
 Evaluation is performed with the model in evaluation mode and without gradient tracking.
 
 ![Correct Predictions](assets/correct_predictions.png)
 
-**Figure:** Correctly classified handwritten digits from the test set, illustrating typical model predictions.
+*Figure:* Correctly classified handwritten digits from the test set, illustrating typical model predictions.
 
 ---
 
@@ -70,9 +71,10 @@ Misclassified test examples were inspected to understand model limitations. Comm
 
 This analysis highlights areas where a deeper model or data augmentation could improve performance.
 
-![misclassified digits](/assets/misclassified_predictions.png)
+![Misclassified Predictions](assets/misclassified_predictions.png)
 
-**Figure**: Missclassified test samples showing common failure cases. Errors frequently involve digits with similar visual structure (e.g., 4 vs 9) or low-contrast handwriting, indicating reduced feature clarity.
+*Figure:* Misclassified test samples showing common failure cases. Errors frequently involve digits with similar visual structure (e.g., 4 vs 9) or low-contrast handwriting, indicating reduced feature clarity.
+
 ---
 
 ## Model Persistence
