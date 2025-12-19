@@ -71,6 +71,7 @@ Misclassified test examples were inspected to understand model limitations. Comm
 This analysis highlights areas where a deeper model or data augmentation could improve performance.
 
 ![misclassified digits](/assets/misclassified_predictions.png)
+
 **Figure**: Missclassified test samples showing common failure cases. Errors frequently involve digits with similar visual structure (e.g., 4 vs 9) or low-contrast handwriting, indicating reduced feature clarity.
 ---
 
